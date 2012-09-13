@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>gov.dsb</groupId>
+    <artifactId>oa-main</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <name>DSB OA Main</name>
+    <description>党史办OA系统</description>
+
+    <modules>
+        <module>oa-core</module>
+        <module>oa-web</module>
+        <module>oa-sprite</module>
+    </modules>
+
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                        <encoding>utf-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>1.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>axis</groupId>
+                    <artifactId>wsdl4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+                <!--<exclusion>-->
+                <!--<groupId>commons-discovery</groupId>-->
+                <!--<artifactId>commons-discovery</artifactId>-->
+                <!--</exclusion>-->
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+    <profiles>
+        <profile>
+            <id>app-env</id>
+            <properties>
+                <hibernate.dialect>com.justone.core.hibernate.dialect.Oracle10gDialect</hibernate.dialect>
+                <hibernate.cache_class>org.hibernate.cache.EhCacheProvider</hibernate.cache_class>
+                <jdbc.groupId>com.oracle</jdbc.groupId>
+                <jdbc.artifactId>ojdbc6</jdbc.artifactId>
+                <jdbc.version>11.1.0.7.0</jdbc.version>
+                <jdbc.driverClassName>oracle.jdbc.OracleDriver</jdbc.driverClassName>
+                <jdbc.url><![CDATA[jdbc:oracle:thin:@192.168.171.164:1521:orcl]]></jdbc.url>
+                <jdbc.username>shcjsq-health</jdbc.username>
+                <jdbc.password>health</jdbc.password>
+
+                <webapp.documentPath>E:\documents</webapp.documentPath>
+                <webapp.chartx.hostIp>192.168.171.179</webapp.chartx.hostIp>
+                <webapp.chartx.port>80</webapp.chartx.port>
+                <webapp.chartx.url>/web/common/dpc/call</webapp.chartx.url>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>dev-env</id>
+            <properties>
+                <hibernate.dialect>org.hibernate.dialect.H2Dialect</hibernate.dialect>
+                <hibernate.cache_class>org.hibernate.cache.EhCacheProvider</hibernate.cache_class>
+                <jdbc.groupId>com.h2database</jdbc.groupId>
+                <jdbc.artifactId>h2</jdbc.artifactId>
+                <jdbc.version>1.3.168</jdbc.version>
+                <jdbc.driverClassName>org.h2.Driver</jdbc.driverClassName>
+                <jdbc.url><![CDATA[jdbc:h2:~/oa;AUTO_SERVER=TRUE]]></jdbc.url>
+                <jdbc.username>oa</jdbc.username>
+                <jdbc.password>oa</jdbc.password>
+
+                <webapp.documentPath>E:\documents</webapp.documentPath>
+                <webapp.chartx.hostIp>192.168.171.179</webapp.chartx.hostIp>
+                <webapp.chartx.port>80</webapp.chartx.port>
+                <webapp.chartx.url>/web/common/dpc/call</webapp.chartx.url>
+            </properties>
+        </profile>
+    </profiles>
+</project>
