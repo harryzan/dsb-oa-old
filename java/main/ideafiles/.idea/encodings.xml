@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/../oa-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/DocCategory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/DocClientCategory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/DocDocument.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/DocDocumentAttach.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/DocRelateCategory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysCode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysCodeList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysDept.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysLog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysPrivilege.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysRole.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysUser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/SysUserPrivilege.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-core/src/main/java/gov/dsb/core/domain/base/IdEntity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../oa-sprite" charset="UTF-8" />
+  </component>
+</project>
+

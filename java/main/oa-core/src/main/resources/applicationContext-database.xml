@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
+       default-lazy-init="false">
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <!--<property name="minPoolSize" value="1"/>-->
+        <!--<property name="initialPoolSize" value="2"/>-->
+        <!--<property name="maxIdleTime" value="600"/>-->
+        <!--<property name="acquireIncrement" value="5"/>-->
+        <!--<property name="maxPoolSize" value="100"/>-->
+        <!--<property name="idleConnectionTestPeriod" value="60"/>-->
+        <!--<property name="maxStatements" value="0"/>-->
+        <!--<property name="maxStatementsPerConnection" value="100"/>-->
+        <!--<property name="user" value="dh"></property>-->
+        <!--<property name="password" value="dh"></property>-->
+        <property name="properties">
+            <props>
+                <prop key="user">${jdbc.username}</prop>
+                <prop key="password">${jdbc.password}</prop>
+                <prop key="v$session.program">${jdbc.username}-web</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="traceInterceptor" class="gov.dsb.core.interceptor.TraceInterceptor"/>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="gov.dsb.core.domain"/>
+        <property name="entityInterceptor" ref="traceInterceptor"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.cache.provider_class">${hibernate.cache_class}</prop>
+
+                <prop key="default_batch_fetch_size">5</prop>
+                <prop key="hibernate.jdbc.fetch_size">50</prop>
+
+                <prop key="c3p0.acquire_increment">2</prop>
+                <prop key="c3p0.max_size">100</prop>
+                <prop key="c3p0.min_size">5</prop>
+                <prop key="c3p0.timeout">300</prop>
+                <prop key="c3p0.idle_test_period">1800</prop>
+                <prop key="c3p0.max_statements">0</prop>
+
+                <prop key="hibernate.cache.use_query_cache">true</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <prop key="hibernate.show_sql">false</prop>
+
+                <prop key="hbm2ddl.auto">create</prop>
+
+                <!--<prop key="hibernate.current_session_context_class">jta</prop>-->
+
+                <prop key="hibernate.query.substitutions">true 1, false 0</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- 注解方式实现事务管理 -->
+    <tx:annotation-driven proxy-target-class="true"/>
+
+    <!-- 声明方式实现事务管理 -->
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="serviceMethods1"
+                      expression="execution(* gov.dsb.core.dao.base.EntityDao.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods1"/>
+    </aop:config>
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="serviceMathods2"
+                      expression="execution(* gov.dsb.core.dao.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMathods2"/>
+    </aop:config>
+    <!--<aop:config proxy-target-class="true">-->
+        <!--<aop:pointcut id="serviceMathods3"-->
+                      <!--expression="execution(* com.justone.health.core.service.*.*(..))"/>-->
+        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMathods3"/>-->
+    <!--</aop:config>-->
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="list*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="check*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="is*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+</beans>

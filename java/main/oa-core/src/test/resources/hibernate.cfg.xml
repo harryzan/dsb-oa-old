@@ -1,0 +1,29 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="gov.dsb.core.domain.Car"/>
+        <mapping class="gov.dsb.core.domain.CarMaintance"/>
+        <mapping class="gov.dsb.core.domain.CarUse"/>
+        <mapping class="gov.dsb.core.domain.Demand"/>
+        <mapping class="gov.dsb.core.domain.DemandType"/>
+        <mapping class="gov.dsb.core.domain.DocCategory"/>
+        <mapping class="gov.dsb.core.domain.DocClientCategory"/>
+        <mapping class="gov.dsb.core.domain.DocDocument"/>
+        <mapping class="gov.dsb.core.domain.DocDocumentAttach"/>
+        <mapping class="gov.dsb.core.domain.DocRelateCategory"/>
+        <mapping class="gov.dsb.core.domain.Item"/>
+        <mapping class="gov.dsb.core.domain.ItemHistory"/>
+        <mapping class="gov.dsb.core.domain.ItemUse"/>
+        <mapping class="gov.dsb.core.domain.SysCode"/>
+        <mapping class="gov.dsb.core.domain.SysCodeList"/>
+        <mapping class="gov.dsb.core.domain.SysDept"/>
+        <mapping class="gov.dsb.core.domain.SysLog"/>
+        <mapping class="gov.dsb.core.domain.SysPrivilege"/>
+        <mapping class="gov.dsb.core.domain.SysRole"/>
+        <mapping class="gov.dsb.core.domain.SysUser"/>
+        <mapping class="gov.dsb.core.domain.SysUserPrivilege"/>
+        <mapping class="gov.dsb.core.domain.UserAttendance"/>
+
+    </session-factory>
+</hibernate-configuration>

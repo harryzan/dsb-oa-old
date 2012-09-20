@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="oa-web:war exploded">
+    <output-path>$PROJECT_DIR$/../oa-web/target/oa-web</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="oa-web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="oa-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: axis:axis:1.4" />
+          <element id="library" level="project" name="Maven: org.apache.axis:axis-jaxrpc:1.4" />
+          <element id="library" level="project" name="Maven: org.apache.axis:axis-saaj:1.4" />
+          <element id="library" level="project" name="Maven: axis:axis-wsdl4j:1.5.1" />
+          <element id="library" level="project" name="Maven: commons-discovery:commons-discovery:0.2" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.14" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.14" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.5.6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

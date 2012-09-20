@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="H2" version="1.3.168 (2012-07-13)" jdbc-version="3.0" driver-name="H2 JDBC Driver" driver-version="1.3.168 (2012-07-13)" uuid="6e23ab1c-271e-4392-8b2f-922a70d899f1">
+    <identifier-quote-string>"</identifier-quote-string>
+    <jdbc-driver>org.h2.Driver</jdbc-driver>
+    <jdbc-url>jdbc:h2:~/Library/H2/oa</jdbc-url>
+    <user-name>oa</user-name>
+    <user-password>dfc5dfcb</user-password>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.168/h2-1.3.168.jar!/</url>
+      </library>
+    </libraries>
+    <table name="CATALOGS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="CATALOG_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="COLLATIONS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="KEY" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="COLUMNS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDINAL_POSITION" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="COLUMN_DEFAULT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_NULLABLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CHARACTER_MAXIMUM_LENGTH" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CHARACTER_OCTET_LENGTH" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="NUMERIC_PRECISION" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="NUMERIC_PRECISION_RADIX" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="NUMERIC_SCALE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLLATION_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="NULLABLE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="IS_COMPUTED" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="SELECTIVITY" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CHECK_CONSTRAINT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SEQUENCE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SOURCE_DATA_TYPE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+    </table>
+    <table name="COLUMN_PRIVILEGES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="GRANTOR" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="GRANTEE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRIVILEGE_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_GRANTABLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="CONSTANTS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="CONSTANT_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CONSTANT_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CONSTANT_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="CONSTRAINTS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="CONSTRAINT_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CONSTRAINT_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CONSTRAINT_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CONSTRAINT_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="UNIQUE_INDEX_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CHECK_EXPRESSION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_LIST" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="CROSS_REFERENCES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="PKTABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PKTABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PKTABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PKCOLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="FKTABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="FKTABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="FKTABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="FKCOLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDINAL_POSITION" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="UPDATE_RULE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="DELETE_RULE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="FK_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PK_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEFERRABILITY" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+    </table>
+    <table name="DOMAINS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="DOMAIN_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DOMAIN_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DOMAIN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_DEFAULT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_NULLABLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="PRECISION" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="SCALE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SELECTIVITY" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CHECK_CONSTRAINT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="FUNCTION_ALIASES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="ALIAS_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ALIAS_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ALIAS_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="JAVA_CLASS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="JAVA_METHOD" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_COUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="RETURNS_RESULT" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="SOURCE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="FUNCTION_COLUMNS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="ALIAS_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ALIAS_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ALIAS_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="JAVA_CLASS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="JAVA_METHOD" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_COUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="POS" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="COLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRECISION" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="SCALE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="RADIX" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="NULLABLE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="COLUMN_TYPE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="COLUMN_DEFAULT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="HELP" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="SECTION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TOPIC" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SYNTAX" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TEXT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="INDEXES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="NON_UNIQUE" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="INDEX_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDINAL_POSITION" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="COLUMN_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CARDINALITY" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="PRIMARY_KEY" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="INDEX_TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_GENERATED" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="INDEX_TYPE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="ASC_OR_DESC" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PAGES" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="FILTER_CONDITION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="SORT_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CONSTRAINT_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="INDEX_CLASS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="IN_DOUBT" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TRANSACTION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="LOCKS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SESSION_ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="LOCK_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="RIGHTS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="GRANTEE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="GRANTEETYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="GRANTEDROLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="RIGHTS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="ROLES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="SCHEMATA" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="CATALOG_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SCHEMA_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SCHEMA_OWNER" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEFAULT_CHARACTER_SET_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEFAULT_COLLATION_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_DEFAULT" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="SEQUENCES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="SEQUENCE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SEQUENCE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SEQUENCE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CURRENT_VALUE" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="INCREMENT" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="IS_GENERATED" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CACHE" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="SESSIONS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="USER_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SESSION_START" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATEMENT" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATEMENT_START" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="SESSION_STATE" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="KEY" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="SETTINGS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="VALUE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="TABLES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="STORAGE_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="LAST_MODIFICATION" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_CLASS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="TABLE_PRIVILEGES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="GRANTOR" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="GRANTEE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRIVILEGE_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_GRANTABLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="TABLE_TYPES" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+    </table>
+    <table name="TRIGGERS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TRIGGER_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TRIGGER_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TRIGGER_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TRIGGER_TYPE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="BEFORE" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="JAVA_CLASS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="QUEUE_SIZE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="NO_WAIT" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SQL" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="TYPE_INFO" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TYPE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="DATA_TYPE" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="PRECISION" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="PREFIX" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="SUFFIX" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARAMS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="AUTO_INCREMENT" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="MINIMUM_SCALE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="MAXIMUM_SCALE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="RADIX" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="POS" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="CASE_SENSITIVE" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NULLABLE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+      <column name="SEARCHABLE" sqlType="SMALLINT" length="5" precision="0" nullable="true" jdbcType="5" />
+    </table>
+    <table name="USERS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ADMIN" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="VIEWS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
+      <column name="TABLE_CATALOG" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_SCHEMA" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="TABLE_NAME" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="VIEW_DEFINITION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="CHECK_OPTION" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="IS_UPDATABLE" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="REMARKS" sqlType="VARCHAR" length="2147483647" precision="0" nullable="true" jdbcType="12" />
+      <column name="ID" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+    </table>
+    <table name="CAR" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="BUYDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="CARLICENSE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="CARMODEL" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_10" columns="id" />
+      <foreign-key name="FK107B474BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK107B474BF1728_INDEX_1" unique="false" columns="USERID" />
+    </table>
+    <table name="CARMAINTANCE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="MAINTAINDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_A9" columns="id" />
+      <foreign-key name="FKA075905674BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKA075905674BF1728_INDEX_A" unique="false" columns="USERID" />
+    </table>
+    <table name="CARUSE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CHECKDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="SUBMITDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="USEDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="USERCOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="USERNAME" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="CARID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="DRIVERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="CHECKERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_76" columns="id" />
+      <foreign-key name="FK77E0B93313D0518D" columns="CARID" ref-table="CAR" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK77E0B93374BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK77E0B93382EB2045" columns="DRIVERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK77E0B933BE5DA892" columns="CHECKERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK77E0B93313D0518D_INDEX_5" unique="false" columns="CARID" />
+      <index name="FK77E0B93374BF1728_INDEX_5" unique="false" columns="USERID" />
+      <index name="FK77E0B93382EB2045_INDEX_5" unique="false" columns="DRIVERID" />
+      <index name="FK77E0B933BE5DA892_INDEX_7" unique="false" columns="CHECKERID" />
+    </table>
+    <table name="DEMAND" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CHECKDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="CHECKDESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEMANDDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="SUBMITDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="CHECKERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="TYPEID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_77" columns="id" />
+      <foreign-key name="FK79CBD66BBEB1E4F0" columns="TYPEID" ref-table="DEMANDTYPE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK79CBD66B74BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK79CBD66BBE5DA892" columns="CHECKERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK79CBD66B74BF1728_INDEX_7" unique="false" columns="USERID" />
+      <index name="FK79CBD66BBE5DA892_INDEX_7" unique="false" columns="CHECKERID" />
+      <index name="FK79CBD66BBEB1E4F0_INDEX_7" unique="false" columns="TYPEID" />
+    </table>
+    <table name="DEMANDTYPE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_102" columns="id" />
+      <foreign-key name="FK69FCAC4574BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK69FCAC4574BF1728_INDEX_1" unique="false" columns="USERID" />
+    </table>
+    <table name="DOCCATEGORY" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ISSYSTEM" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="PATH" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_E" columns="id" />
+      <foreign-key name="FKEEFB1E1690C20165" columns="PARENTID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKEEFB1E1690C20165_INDEX_E" unique="false" columns="PARENTID" />
+    </table>
+    <table name="DOCCATEGORY_DEPTEDIT" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_C" columns="doccategoryid,refid" />
+      <foreign-key name="FKC17D3DD8ADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FKC17D3DD8AD01E46A" columns="REFID" ref-table="SYSDEPT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC17D3DD8AD01E46A_INDEX_C" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCATEGORY_DEPTVIEW" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_C1" columns="doccategoryid,refid" />
+      <foreign-key name="FKC1850A73ADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FKC1850A73AD01E46A" columns="REFID" ref-table="SYSDEPT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC1850A73AD01E46A_INDEX_C" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCATEGORY_PRIVILEGEEDIT" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_3" columns="doccategoryid,refid" />
+      <foreign-key name="FK3F934DB2ADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK3F934DB2E02214C8" columns="REFID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK3F934DB2E02214C8_INDEX_3" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCATEGORY_PRIVILEGEVIEW" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_3F" columns="doccategoryid,refid" />
+      <foreign-key name="FK3F9B1A4DADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK3F9B1A4DE02214C8" columns="REFID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK3F9B1A4DE02214C8_INDEX_3" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCATEGORY_USEREDIT" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_7" columns="doccategoryid,refid" />
+      <foreign-key name="FK7926F85EADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK7926F85EAD09D1F0" columns="REFID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK7926F85EAD09D1F0_INDEX_7" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCATEGORY_USERVIEW" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="REFID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_79" columns="doccategoryid,refid" />
+      <foreign-key name="FK792EC4F9ADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK792EC4F9AD09D1F0" columns="REFID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK792EC4F9AD09D1F0_INDEX_7" unique="false" columns="REFID" />
+    </table>
+    <table name="DOCCLIENTCATEGORY" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="PURPOSE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_1" columns="id" />
+      <foreign-key name="FK134AD8E1FC9B7CD0" columns="PARENTID" ref-table="DOCCLIENTCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK134AD8E1FC9B7CD0_INDEX_1" unique="false" columns="PARENTID" />
+    </table>
+    <table name="DOCDOCUMENT" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="ABSTRACTCONTENT" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="AUTHOR" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATETIME" sqlType="TIMESTAMP" length="23" precision="10" nullable="true" jdbcType="93" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="KEYWORDS" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORIGINCODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDATETIME" sqlType="TIMESTAMP" length="23" precision="10" nullable="true" jdbcType="93" />
+      <column name="CREATEUSERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="DOCCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="FORMATID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="PROPERTYID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="DEPTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="UPDATEUSERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_1F" columns="id" />
+      <foreign-key name="FK1F553233ADA44FF1" columns="DOCCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK1F553233654D6392" columns="PROPERTYID" ref-table="SYSCODELIST" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK1F553233B8C17D34" columns="FORMATID" ref-table="SYSCODELIST" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK1F55323356F4859C" columns="DEPTID" ref-table="SYSDEPT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK1F5532333C0F0B24" columns="CREATEUSERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK1F553233A879D531" columns="UPDATEUSERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK1F5532333C0F0B24_INDEX_1" unique="false" columns="CREATEUSERID" />
+      <index name="FK1F55323356F4859C_INDEX_1" unique="false" columns="DEPTID" />
+      <index name="FK1F553233654D6392_INDEX_1" unique="false" columns="PROPERTYID" />
+      <index name="FK1F553233A879D531_INDEX_1" unique="false" columns="UPDATEUSERID" />
+      <index name="FK1F553233ADA44FF1_INDEX_1" unique="false" columns="DOCCATEGORYID" />
+      <index name="FK1F553233B8C17D34_INDEX_1" unique="false" columns="FORMATID" />
+    </table>
+    <table name="DOCDOCUMENTATTACH" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CONTENT" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATETIME" sqlType="TIMESTAMP" length="23" precision="10" nullable="true" jdbcType="93" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILENAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="FILESIZE" sqlType="DOUBLE" length="17" precision="0" nullable="true" jdbcType="8" />
+      <column name="SAVEFILENAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="UPDATETIME" sqlType="TIMESTAMP" length="23" precision="10" nullable="true" jdbcType="93" />
+      <column name="DOCDOCUMENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_8" columns="id" />
+      <foreign-key name="FK80B762386023E4EB" columns="DOCDOCUMENTID" ref-table="DOCDOCUMENT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK80B762386023E4EB_INDEX_8" unique="false" columns="DOCDOCUMENTID" />
+    </table>
+    <table name="DOCRELATECATEGORY" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="DOCUMENTCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="CLIENTCATEGORYID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_9" columns="id" />
+      <foreign-key name="FK96ECC66FB2685C14" columns="DOCUMENTCATEGORYID" ref-table="DOCCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK96ECC66FAB705E2F" columns="CLIENTCATEGORYID" ref-table="DOCCLIENTCATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK96ECC66F803D6A5E" columns="PARENTID" ref-table="DOCRELATECATEGORY" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK96ECC66F803D6A5E_INDEX_9" unique="false" columns="PARENTID" />
+      <index name="FK96ECC66FAB705E2F_INDEX_9" unique="false" columns="CLIENTCATEGORYID" />
+      <index name="FK96ECC66FB2685C14_INDEX_9" unique="false" columns="DOCUMENTCATEGORYID" />
+    </table>
+    <table name="ITEM" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CREATEDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="ITEMCOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="MODEL" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="UNIT" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="CONSTRAINT_2" columns="id" />
+      <foreign-key name="FK22EF3374BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK22EF3374BF1728_INDEX_3" unique="false" columns="USERID" />
+    </table>
+    <table name="ITEMHISTORY" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="ADDCOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="ADDDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="RESTCOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="ITEMID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_34" columns="id" />
+      <foreign-key name="FK7AD69DE1717FD9F7" columns="ITEMID" ref-table="ITEM" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK7AD69DE174BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK7AD69DE1717FD9F7_INDEX_3" unique="false" columns="ITEMID" />
+      <index name="FK7AD69DE174BF1728_INDEX_3" unique="false" columns="USERID" />
+    </table>
+    <table name="ITEMUSE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CHECKDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="SUBMITDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="USECOUNT" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="USEDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="CHECKERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_A8" columns="id" />
+      <foreign-key name="FKE15B2D5474BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FKE15B2D54BE5DA892" columns="CHECKERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKE15B2D5474BF1728_INDEX_A" unique="false" columns="USERID" />
+      <index name="FKE15B2D54BE5DA892_INDEX_A" unique="false" columns="CHECKERID" />
+    </table>
+    <table name="SYSCODE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="RESERVED" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_C3" columns="id" />
+      <foreign-key name="FKC335CA1AEC973A69" columns="PARENTID" ref-table="SYSCODE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC335CA1AEC973A69_INDEX_C" unique="false" columns="PARENTID" />
+    </table>
+    <table name="SYSCODELIST" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="LISTCODE" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="LISTNAME" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="RESERVED" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TAG" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="TREEID" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="CODEID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_4" columns="id" />
+      <foreign-key name="FK40D2D5B855C69AEC" columns="CODEID" ref-table="SYSCODE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK40D2D5B8E28B2D27" columns="PARENTID" ref-table="SYSCODELIST" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK40D2D5B855C69AEC_INDEX_4" unique="false" columns="CODEID" />
+      <index name="FK40D2D5B8E28B2D27_INDEX_4" unique="false" columns="PARENTID" />
+    </table>
+    <table name="SYSDEPT" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="ADDRESS" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="APTITUDE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="BANK" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="BANKACCOUNT" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CITY" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CORPORATIONREPRESENT" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="COUNTRY" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ENTERPRISECHARACTER" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="OTHERDEPT" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="PROFILE" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PROVINCE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="REGISTEREDBANKROLL" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORTNAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="STAMPER" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TELEPHONE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="ZIPCODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_C33" columns="id" />
+      <foreign-key name="FKC3361A72EC978AC1" columns="PARENTID" ref-table="SYSDEPT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC3361A72EC978AC1_INDEX_C" unique="false" columns="PARENTID" />
+    </table>
+    <table name="SYSLOG" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CONTENT" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="IPADDRESS" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOGDATE" sqlType="TIMESTAMP" length="23" precision="10" nullable="true" jdbcType="93" />
+      <column name="PRIVILEGEID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_92" columns="id" />
+      <foreign-key name="FK92AF4957E8C44366" columns="PRIVILEGEID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK92AF495774BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK92AF495774BF1728_INDEX_9" unique="false" columns="USERID" />
+      <index name="FK92AF4957E8C44366_INDEX_9" unique="false" columns="PRIVILEGEID" />
+    </table>
+    <table name="SYSPRIVILEGE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CODE" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="DEFINITION" sqlType="VARCHAR" length="400" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="LEAF" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="ORDERNO" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="TAG" sqlType="INTEGER" length="10" precision="0" nullable="true" jdbcType="4" />
+      <column name="TREEID" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="PARENTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="PRIVILEGETYPE" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_B" columns="id" />
+      <foreign-key name="FKBDFD768446045F4D" columns="PRIVILEGETYPE" ref-table="SYSCODELIST" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FKBDFD76841FB7BB1F" columns="PARENTID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKBDFD76841FB7BB1F_INDEX_B" unique="false" columns="PARENTID" />
+      <index name="FKBDFD768446045F4D_INDEX_B" unique="false" columns="PRIVILEGETYPE" />
+    </table>
+    <table name="SYSROLE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="DESCRIPTION" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="CONSTRAINT_C33C" columns="id" />
+    </table>
+    <table name="SYSROLE_PRIVILEGE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ROLEID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="PRIVILEGEID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <foreign-key name="FK21B6DF5E8C44366" columns="PRIVILEGEID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK21B6DF56F69C1BE" columns="ROLEID" ref-table="SYSROLE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK21B6DF56F69C1BE_INDEX_2" unique="false" columns="ROLEID" />
+      <index name="FK21B6DF5E8C44366_INDEX_2" unique="false" columns="PRIVILEGEID" />
+    </table>
+    <table name="SYSUSER" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="DISPLAYNAME" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="EMAIL" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="LOGINNAME" sqlType="VARCHAR" length="200" precision="0" nullable="false" jdbcType="12" />
+      <column name="PASSWORD" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="PHONENUMBER" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <column name="PROFILE" sqlType="VARCHAR" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="DEPTID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_C33E" columns="id" />
+      <foreign-key name="FKC33E07F856F4859C" columns="DEPTID" ref-table="SYSDEPT" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC33E07F856F4859C_INDEX_C" unique="false" columns="DEPTID" />
+    </table>
+    <table name="SYSUSER_PRIVILEGE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="ISDENY" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="PRIVILEGEID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="CONSTRAINT_BB" columns="id" />
+      <foreign-key name="FKBB82730AE8C44366" columns="PRIVILEGEID" ref-table="SYSPRIVILEGE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FKBB82730A74BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKBB82730A74BF1728_INDEX_B" unique="false" columns="USERID" />
+      <index name="FKBB82730AE8C44366_INDEX_B" unique="false" columns="PRIVILEGEID" />
+    </table>
+    <table name="SYSUSER_ROLE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="ROLEID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <foreign-key name="FK3201645D6F69C1BE" columns="ROLEID" ref-table="SYSROLE" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <foreign-key name="FK3201645D74BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK3201645D6F69C1BE_INDEX_3" unique="false" columns="ROLEID" />
+      <index name="FK3201645D74BF1728_INDEX_3" unique="false" columns="USERID" />
+    </table>
+    <table name="USERATTENDANCE" schema="PUBLIC" catalog="OA" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
+      <column name="CHECKDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
+      <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="NOON" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
+      <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="CONSTRAINT_A" columns="id" />
+      <foreign-key name="FK6257753474BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FK6257753474BF1728_INDEX_F" unique="false" columns="USERID" />
+    </table>
+  </data-source>
+</component>
