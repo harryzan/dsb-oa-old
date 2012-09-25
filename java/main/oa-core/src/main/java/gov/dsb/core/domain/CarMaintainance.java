@@ -13,7 +13,7 @@ import java.sql.Date;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-public class CarMaintance extends IdEntity {
+public class CarMaintainance extends IdEntity {
 
     private Long id;
 

@@ -18,17 +18,17 @@ import java.util.Map;
 @Service
 public class EntityService<T, PK extends Serializable> {
 
-    private EntityDao<T, PK> entityDao;
+    private NewEntityDao<T, PK> entityDao;
 
     private SqlDao sqlDao;
 
     public void initDao(SessionFactory sessionFactory, Class<T> entityClass) {
-        entityDao = new EntityDao<T, PK>(sessionFactory, entityClass);
+        entityDao = new NewEntityDao<T, PK>(sessionFactory, entityClass);
         sqlDao = new SqlDao(sessionFactory);
     }
 
 
-    public EntityDao<T, PK> entityDao() {
+    public NewEntityDao<T, PK> entityDao() {
         return entityDao;
     }
 
