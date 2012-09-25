@@ -9,11 +9,12 @@
         <artifactId>oa-main</artifactId>
         <version>1.0</version>
     </parent>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>oa-web</name>
     <url>http://maven.apache.org</url>
     <dependencies>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

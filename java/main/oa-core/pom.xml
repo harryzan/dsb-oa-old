@@ -4,13 +4,13 @@
 
     <groupId>gov.dsb</groupId>
     <artifactId>oa-core</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <parent>
         <groupId>gov.dsb</groupId>
         <artifactId>oa-main</artifactId>
         <version>1.0</version>
     </parent>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>oa-core</name>
     <url>http://maven.apache.org</url>
@@ -274,6 +274,94 @@
             <groupId>oro</groupId>
             <artifactId>oro</artifactId>
             <version>2.0.8</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.3.1.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-spring-plugin</artifactId>
+            <version>2.1.8.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-beans</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-test</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+            <version>2.1.8.1</version>
+        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.apache.struts</groupId>-->
+        <!--<artifactId>struts2-rest-plugin</artifactId>-->
+        <!--<version>2.1.6</version>-->
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>net.sf.json-lib</groupId>-->
+        <!--<artifactId>json-lib</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
