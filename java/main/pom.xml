@@ -10,7 +10,6 @@
     <description>党史办OA系统</description>
 
     <modules>
-        <module>oa-core</module>
         <module>oa-web</module>
         <module>oa-sprite</module>
     </modules>

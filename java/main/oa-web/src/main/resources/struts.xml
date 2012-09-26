@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <!--
+         使用ZeroConfig + CodeBehind插件,实现约定大于配置的零配置文件风格.
+                特殊的Result路径在Action类中使用@Result设定.
+     -->
+    <constant name="struts.convention.result.path" value="/WEB-INF/pages/"/>
+
+    <!--<constant name="struts.convention.package.locators" value="action"/>    -->
+    <!--<constant name="struts.convention.action.suffix" value="Controller"/>-->
+    <!--<constant name="struts.convention.action.mapAllMatches" value="true"/>-->
+    <!--<constant name="struts.convention.default.parent.package" value="rest-default"/>-->
+
+    <constant name="struts.objectFactory.spring.autoWire" value="auto"/>
+    <!--<constant name="struts.codebehind.defaultPackage" value="person" />-->
+    <constant name="struts.serve.static" value="true"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.multipart.maxSize" value="104857600"/>
+
+    <package name="default" extends="struts-default">
+        <!--<interceptors>-->
+        <!--<interceptor-stack name="justoneStack">-->
+        <!--<interceptor-ref name="checkbox" />-->
+        <!--<interceptor-ref name="params" />-->
+        <!--<interceptor-ref name="static-params" />-->
+        <!--<interceptor-ref name="defaultStack" />-->
+        <!--</interceptor-stack>-->
+        <!--</interceptors>-->
+
+        <!--<global-results>-->
+        <!--<result name="Exception">/WEB-INF/pages/error.jsp</result>-->
+        <!--</global-results>-->
+
+        <!--<global-exception-mappings>-->
+        <!--<exception-mapping exception="java.lang.Exception" result="Exception"/>-->
+        <!--</global-exception-mappings>-->
+
+        <!--基于paramsPrepareParamsStack,增加store interceptor -->
+        <interceptors>
+            <interceptor-stack name="justoneStack">
+                <interceptor-ref name="store">
+                    <param name="operationMode">AUTOMATIC</param>
+                </interceptor-ref>
+                <interceptor-ref name="paramsPrepareParamsStack"/>
+                <interceptor-ref name="fileUploadStack"/>
+                <!-- add by xiejiao 09/7/15 13:26 -->
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="justoneStack"/>
+    </package>
+</struts>
