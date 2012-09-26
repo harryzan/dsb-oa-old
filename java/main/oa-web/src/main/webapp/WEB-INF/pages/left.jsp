@@ -65,7 +65,7 @@
                 <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="*" class="cd">考勤管理</a></td>
+                        <td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/attendance/user-attendance-main')" class="cd">考勤管理</a></td>
                     </tr>
                     <tr>
                         <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
