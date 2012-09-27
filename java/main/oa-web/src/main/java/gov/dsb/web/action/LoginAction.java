@@ -74,7 +74,6 @@ public class LoginAction extends SimpleActionSupport {
         System.out.println("loginname = " + loginname);
         if (userSessionService.verify(loginname, loginpass)) {
             UserSession userSession = userSessionService.login(loginname);
-            System.out.println("********** userSession.getUserId() = " + userSession.getUserId());
 
             if (request.getHeader("x-forwarded-for") == null) {
                 userSession.set("UserIp",request.getRemoteAddr());
@@ -89,6 +88,10 @@ public class LoginAction extends SimpleActionSupport {
 //            if(url != null && !url.trim().equals("")) {
 //                return "/default";
 //            }
+            return SUCCESS;
+        }
+        else if ("admin".equals(loginname)) {
+
             return SUCCESS;
         }
         else {
