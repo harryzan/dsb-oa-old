@@ -7,7 +7,7 @@
     <user-password>dfc5dfcb</user-password>
     <libraries>
       <library>
-        <url>jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.168/h2-1.3.168.jar!/</url>
+        <url>jar://$USER_HOME$/.m2/repository/com/h2database/h2/1.3.168/h2-1.3.168.jar!/</url>
       </library>
     </libraries>
     <table name="CATALOGS" schema="INFORMATION_SCHEMA" catalog="OA" type="SYSTEM TABLE">
@@ -317,16 +317,16 @@
       <foreign-key name="FK107B474BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
       <index name="FK107B474BF1728_INDEX_1" unique="false" columns="USERID" />
     </table>
-    <table name="CARMAINTANCE" schema="PUBLIC" catalog="OA" type="TABLE">
+    <table name="CARMAINTAINANCE" schema="PUBLIC" catalog="OA" type="TABLE">
       <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
       <column name="DESC" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
       <column name="MAINTAINDATE" sqlType="DATE" length="8" precision="0" nullable="true" jdbcType="91" />
       <column name="STATUS" sqlType="BOOLEAN" length="1" precision="0" nullable="true" jdbcType="16" />
       <column name="TYPE" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
       <column name="USERID" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
-      <primary-key name="CONSTRAINT_A9" columns="id" />
-      <foreign-key name="FKA075905674BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
-      <index name="FKA075905674BF1728_INDEX_A" unique="false" columns="USERID" />
+      <primary-key name="CONSTRAINT_3D" columns="id" />
+      <foreign-key name="FKC91A272E74BF1728" columns="USERID" ref-table="SYSUSER" ref-schema="PUBLIC" ref-catalog="OA" ref-columns="ID" update-rule="1" delete-rule="1" deferrability="2" />
+      <index name="FKC91A272E74BF1728_INDEX_3" unique="false" columns="USERID" />
     </table>
     <table name="CARUSE" schema="PUBLIC" catalog="OA" type="TABLE">
       <column name="ID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />

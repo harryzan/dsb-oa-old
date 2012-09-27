@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../oa-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../oa-web" />
   </component>
   <component name="IdProvider" IDEtalkID="CE309763E1497FD213BA2565DF93AC9D" />
   <component name="MavenProjectsManager">

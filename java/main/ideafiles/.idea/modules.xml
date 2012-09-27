@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/oa-core.iml" filepath="$PROJECT_DIR$/oa-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa-main.iml" filepath="$PROJECT_DIR$/oa-main.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa-sprite.iml" filepath="$PROJECT_DIR$/oa-sprite.iml" />
       <module fileurl="file://$PROJECT_DIR$/oa-web.iml" filepath="$PROJECT_DIR$/oa-web.iml" />
