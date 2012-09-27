@@ -27,33 +27,33 @@ public class CarUse extends IdEntity {
         this.id = id;
     }
 
-    private Date usedate;
+    private String usedate;
 
-    public Date getUsedate() {
+    public String getUsedate() {
         return usedate;
     }
 
-    public void setUsedate(Date usedate) {
+    public void setUsedate(String usedate) {
         this.usedate = usedate;
     }
 
-    private Date submitdate;
+    private String submitdate;
 
-    public Date getSubmitdate() {
+    public String getSubmitdate() {
         return submitdate;
     }
 
-    public void setSubmitdate(Date submitdate) {
+    public void setSubmitdate(String submitdate) {
         this.submitdate = submitdate;
     }
 
-    private Date checkdate;
+    private String checkdate;
 
-    public Date getCheckdate() {
+    public String getCheckdate() {
         return checkdate;
     }
 
-    public void setCheckdate(Date checkdate) {
+    public void setCheckdate(String checkdate) {
         this.checkdate = checkdate;
     }
 
@@ -111,7 +111,7 @@ public class CarUse extends IdEntity {
 
     private SysUser user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "USERID", referencedColumnName = "ID")
     public SysUser getUser() {
         return user;
@@ -135,7 +135,7 @@ public class CarUse extends IdEntity {
 
     private Car car;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "CARID", referencedColumnName = "ID")
     public Car getCar() {
         return car;
@@ -147,7 +147,7 @@ public class CarUse extends IdEntity {
 
     private SysUser checker;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "CHECKERID", referencedColumnName = "ID")
     public SysUser getChecker() {
         return checker;

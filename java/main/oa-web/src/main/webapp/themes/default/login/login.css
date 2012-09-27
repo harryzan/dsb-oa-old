@@ -1,0 +1,69 @@
+@charset "utf-8";
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.userlogin_body {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    MARGIN: 0;
+    BACKGROUND: url(login_bg.jpg) #fff no-repeat top center;
+    FONT: 12px/150% Arial, "宋体", Helvetica, sans-serif;
+    text-align: center;
+}
+.loginDiv{
+	width:916px;
+	height:421px;
+	text-align:center;
+	background-image: url(login_1.jpg);
+    position: absolute;
+    top:100px;
+    left:200px;
+    display:none;
+}
+ #layout{
+  position: absolute;/*--絕對定位--*/
+  top: 50%;
+  left: 50%;
+  margin-top: -240px;/*--div高度的一半--*/
+  margin-left: -320px;/*--div寬度的一半--*/
+	width:916px;
+	height:421px;
+  background: #ECECEC;
+  }
+
+input,div,span{
+    font-size:13px;
+    font-family: "宋体",serif;
+    color:#666666;
+}
+
+td{
+   font-size:13px;
+   font-family: "宋体",serif;
+   color:#666666;
+}
+/* 登录页input框 css */
+.login_input {
+	vertical-align: middle;
+	width: 150px;
+	height: 20px;
+	border: 1px solid #bbbbbb;
+	line-height: 20px;
+}
+.login_ok {
+	width: 59px;
+	height: 25px;
+	border: 0;
+    background-image: url(login_ok.jpg);
+    cursor: pointer;
+}
+
+.login_cancel {
+	width: 59px;
+	height: 25px;
+	border: 0;
+    background-image: url(login_cancel.jpg);
+    cursor: pointer;
+}

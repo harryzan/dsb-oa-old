@@ -69,11 +69,11 @@
                     </tr>
                     <tr>
                         <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">车辆管理</a></td>
+                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/car/car-main')" class="cd">车辆管理</a></td>
                     </tr>
                     <tr>
                         <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">日程领用管理</a></td>
+                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/item/item-main')" class="cd">日常领用管理</a></td>
                     </tr>
                     <tr>
                         <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>

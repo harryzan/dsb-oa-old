@@ -57,13 +57,13 @@ public class Item extends IdEntity {
         this.unit = unit;
     }
 
-    private Date createdate;
+    private String createdate;
 
-    public Date getCreatedate() {
+    public String getCreatedate() {
         return createdate;
     }
 
-    public void setCreatedate(Date createdate) {
+    public void setCreatedate(String createdate) {
         this.createdate = createdate;
     }
 

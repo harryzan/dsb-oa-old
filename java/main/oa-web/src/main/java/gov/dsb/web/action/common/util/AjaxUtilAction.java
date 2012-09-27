@@ -1,7 +1,5 @@
 package gov.dsb.web.action.common.util;
 
-import com.justone.core.struts2.SimpleActionSupport;
-import com.justone.core.utils.CryptUtil;
 import gov.dsb.core.dao.SysLogDao;
 import gov.dsb.core.dao.SysPrivilegeDao;
 import gov.dsb.core.dao.SysUserDao;
@@ -9,6 +7,8 @@ import gov.dsb.core.domain.SysLog;
 import gov.dsb.core.domain.SysPrivilege;
 import gov.dsb.core.domain.SysRole;
 import gov.dsb.core.domain.SysUser;
+import gov.dsb.core.struts2.SimpleActionSupport;
+import gov.dsb.core.utils.CryptUtil;
 import gov.dsb.web.security.UserSession;
 import gov.dsb.web.security.UserSessionService;
 import org.apache.struts2.ServletActionContext;

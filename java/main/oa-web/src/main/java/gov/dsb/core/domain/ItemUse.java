@@ -29,33 +29,33 @@ public class ItemUse extends IdEntity {
         this.id = id;
     }
 
-    private Date usedate;
+    private String usedate;
 
-    public Date getUsedate() {
+    public String getUsedate() {
         return usedate;
     }
 
-    public void setUsedate(Date usedate) {
+    public void setUsedate(String usedate) {
         this.usedate = usedate;
     }
 
-    private Date submitdate;
+    private String submitdate;
 
-    public Date getSubmitdate() {
+    public String getSubmitdate() {
         return submitdate;
     }
 
-    public void setSubmitdate(Date submitdate) {
+    public void setSubmitdate(String submitdate) {
         this.submitdate = submitdate;
     }
 
-    private Date checkdate;
+    private String checkdate;
 
-    public Date getCheckdate() {
+    public String getCheckdate() {
         return checkdate;
     }
 
-    public void setCheckdate(Date checkdate) {
+    public void setCheckdate(String checkdate) {
         this.checkdate = checkdate;
     }
 
@@ -101,6 +101,18 @@ public class ItemUse extends IdEntity {
 
     public void setUser(SysUser user) {
         this.user = user;
+    }
+
+    private Item item;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ITEMID", referencedColumnName = "ID")
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     private SysUser checker;

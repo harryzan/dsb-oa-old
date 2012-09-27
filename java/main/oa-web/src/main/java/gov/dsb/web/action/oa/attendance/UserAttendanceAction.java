@@ -1,11 +1,13 @@
 package gov.dsb.web.action.oa.attendance;
 
-import com.justone.core.struts2.CRUDActionSupport;
 import gov.dsb.core.dao.SysDeptDao;
 import gov.dsb.core.dao.SysRoleDao;
 import gov.dsb.core.dao.SysUserDao;
 import gov.dsb.core.dao.UserAttendanceDao;
+import gov.dsb.core.domain.SysUser;
 import gov.dsb.core.domain.UserAttendance;
+import gov.dsb.core.struts2.CRUDActionSupport;
+import gov.dsb.web.security.UserSessionService;
 import org.apache.struts2.convention.annotation.ParentPackage;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
@@ -34,6 +36,9 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
     private UserAttendanceDao service;
 
     @Autowired
+    private UserSessionService userSessionService;
+
+    @Autowired
     private SysUserDao sysUserDao;
 
     @Autowired
@@ -49,6 +54,28 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
     private String beforeday;
 
     private String afterday;
+
+    private List<UserAttendance> attendances;
+
+    private String attid;
+
+    private String atttype;
+
+    public String getAttid() {
+        return attid;
+    }
+
+    public void setAttid(String attid) {
+        this.attid = attid;
+    }
+
+    public String getAtttype() {
+        return atttype;
+    }
+
+    public void setAtttype(String atttype) {
+        this.atttype = atttype;
+    }
 
     public String getBeforeday() {
         return beforeday;
@@ -94,13 +121,32 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
         this.result = result;
     }
 
+
+    public List<UserAttendance> getAttendances() {
+        return attendances;
+    }
+
+    public void setAttendances(List<UserAttendance> attendances) {
+        this.attendances = attendances;
+    }
+
     private String begintime;
 
     private String endtime;
 
     public String save() throws Exception {
-        service.save(entity);
-        return RELOAD;
+        System.out.println("********* attid = " + attid);
+        System.out.println("********* atttype = " + atttype);
+
+        String[] ids = attid.split(",");
+        String[] types = atttype.split(",");
+        for (int i = 0; i < ids.length; i++) {
+            UserAttendance attendance = service.get(Long.parseLong(ids[i].trim()));
+            attendance.setType(types[i].trim());
+            service.save(attendance);
+        }
+
+        return day();
     }
 
     public String delete() throws Exception {
@@ -133,6 +179,19 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
             day = sdf.format(d);
             beforeday = sdf.format(new Date(d.getTime() - 24 * 3600 * 1000L));
             afterday = sdf.format(new Date(d.getTime() + 24 * 3600 * 1000L));
+        }
+
+
+        SysUser currentUser = userSessionService.getCurrentSysUser();
+
+        Date d = sdf.parse(day);
+        Date now = new Date();
+        if (!d.after(now))
+        {
+            if (sysUserDao.containRole(currentUser.getId(), "系统管理员"))
+                attendances = service.createDayAttendance(new java.sql.Date(sdf.parse(day).getTime()));
+            else if (sysUserDao.containRole(currentUser.getId(), "考勤负责人"))
+                attendances = service.createDayAttendance(new java.sql.Date(sdf.parse(day).getTime()), currentUser.getSysdept());
         }
 
         return "day";

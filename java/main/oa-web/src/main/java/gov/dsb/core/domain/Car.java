@@ -47,13 +47,14 @@ public class Car extends IdEntity {
         this.carlicense = carlicense;
     }
 
-    private Date buydate;
+    private String buydate;
 
-    public Date getBuydate() {
+    @Basic
+    public String getBuydate() {
         return buydate;
     }
 
-    public void setBuydate(Date buydate) {
+    public void setBuydate(String buydate) {
         this.buydate = buydate;
     }
 

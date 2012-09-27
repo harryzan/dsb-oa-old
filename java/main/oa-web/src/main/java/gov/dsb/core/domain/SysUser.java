@@ -1,6 +1,7 @@
 package gov.dsb.core.domain;
 
 import gov.dsb.core.domain.base.IdEntity;
+import org.hibernate.annotations.Fetch;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -227,7 +228,7 @@ public class SysUser extends IdEntity {
 
     private Collection<SysRole> sysroleusers;
 
-    @ManyToMany
+    @ManyToMany()
     @JoinTable(name = "SYSUSER_ROLE",
             joinColumns = @JoinColumn(name = "USERID", referencedColumnName = "ID", nullable = false),
             inverseJoinColumns = @JoinColumn(name = "ROLEID", referencedColumnName = "ID",

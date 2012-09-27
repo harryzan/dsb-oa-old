@@ -71,7 +71,7 @@ public class UserAttendance extends IdEntity {
 
     private SysUser user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "USERID", referencedColumnName = "ID")
     public SysUser getUser() {
         return user;

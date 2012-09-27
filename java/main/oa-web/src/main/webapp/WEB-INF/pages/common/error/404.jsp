@@ -28,7 +28,7 @@
                 <tr>
                     <td height="30" align="center">&nbsp; </td>
                     <td class="text1" >
-                        <div><a href="<c:url value="/main"/>"><b>返回首页</b></a></div>
+                        <div><a href="<c:url value="/"/>"><b>返回首页</b></a></div>
                     </td>
                 </tr>
                 <tr>

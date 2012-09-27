@@ -403,3 +403,28 @@ a:active { color: #333;}
 	font-weight: bold;
 	color: #204498;
 	}
+
+.sy_line{
+	height: auto;
+	line-height: 31px;
+	background-image: url(../images/sy_bg.jpg);
+	background-repeat: repeat-x;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #dddee1;
+	border-left-color: #dddee1;
+}
+.sy_text_1{
+	font-family: "����";
+	font-size: 14px;
+	font-weight: bold;
+	color: #ae0407;
+}
+.sy_right_bg{
+	background-image: url(../images/sy_7.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	width: 280px;
+}

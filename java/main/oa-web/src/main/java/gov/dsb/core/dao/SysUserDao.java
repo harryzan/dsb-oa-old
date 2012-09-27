@@ -31,6 +31,9 @@ public class SysUserDao extends EntityService<SysUser, Long> {
     @Autowired
     private SysUserPrivilegeDao sysUserPrivilegeDao;
 
+    @Autowired
+    private SysRoleDao sysRoleDao;
+
     /**
      * user login
      * @param loginname    username
@@ -201,6 +204,18 @@ public class SysUserDao extends EntityService<SysUser, Long> {
         }
 
 
+        return false;
+    }
+
+    public boolean containRole(Long userId, String rolename) {
+        SysRole role = sysRoleDao.findUniqueByProperty("name", rolename);
+        if (role != null) {
+            Collection<SysUser> users = role.getSysuserroles();
+            for (SysUser user : users) {
+                if (user.getId().equals(userId))
+                    return true;
+            }
+        }
         return false;
     }
 }

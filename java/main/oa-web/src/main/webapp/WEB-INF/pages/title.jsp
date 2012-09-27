@@ -18,8 +18,8 @@
   	
   <div class="nav">
       <ul>
-        <li class="n1"><a href="main.jsp" class="tag">电子邮件</a></li>
-        <li class="n1"><a href="main.jsp">规章制度</a></li>
+        <li class="n1"><a href="main_1.jsp" class="tag">电子邮件</a></li>
+        <li class="n1"><a href="main_1.jsp">规章制度</a></li>
         <li class="n1"><a href="#">文书管理</a></li>
         <li class="n1"><a href="#">需求申请</a></li>
         <li class="n1"><a href="#">资料库链接</a></li>

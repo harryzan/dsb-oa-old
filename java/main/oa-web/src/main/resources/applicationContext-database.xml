@@ -95,6 +95,8 @@
             <tx:method name="save*" propagation="REQUIRED"/>
             <tx:method name="update*" propagation="REQUIRED"/>
             <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="create*" propagation="REQUIRED"/>
+            <tx:method name="*" propagation="SUPPORTS"/>
         </tx:attributes>
     </tx:advice>
 

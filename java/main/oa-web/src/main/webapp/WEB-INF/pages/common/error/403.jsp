@@ -27,7 +27,7 @@
                 <tr>
                     <td height="30" align="center">&nbsp; </td>
                     <td class="text1" >
-                        <div><a href="<c:url value="/main"/>">返回首页</a>&nbsp;&nbsp;<a href="<c:url value="/${ctx}/logon!logout"/>">退出登录</a></div>
+                        <div><a href="<c:url value="/"/>">返回首页</a>&nbsp;&nbsp;<a href="<c:url value="/${ctx}/logon!logout"/>">退出登录</a></div>
                     </td>
                 </tr>
                 <tr>
