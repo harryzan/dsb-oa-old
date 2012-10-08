@@ -3,7 +3,7 @@
 <hibernate-configuration>
     <session-factory>
         <mapping class="gov.dsb.core.domain.Car"/>
-        <mapping class="gov.dsb.core.domain.CarMaintance"/>
+        <mapping class="gov.dsb.core.domain.CarMaintainance"/>
         <mapping class="gov.dsb.core.domain.CarUse"/>
         <mapping class="gov.dsb.core.domain.Demand"/>
         <mapping class="gov.dsb.core.domain.DemandType"/>

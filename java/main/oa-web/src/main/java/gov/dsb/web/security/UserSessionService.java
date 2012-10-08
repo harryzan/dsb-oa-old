@@ -137,4 +137,21 @@ public class UserSessionService {
         return sysUserDao.get(userSession.getUserId());
     }
 
+
+    public UserSession getUserSession() {
+        HttpServletRequest request = ServletActionContext.getRequest();
+
+        HttpSession session = request.getSession(true);
+        UserSession userSession = (UserSession) session.getAttribute(UserSession.SESSION_USERSESSION);
+        return userSession;
+    }
+
+    public void putUserSession(UserSession userSession) {
+        HttpServletRequest request = ServletActionContext.getRequest();
+
+        HttpSession session = request.getSession(true);
+
+        session.setAttribute(UserSession.SESSION_USERSESSION, userSession);
+
+    }
 }

@@ -52,6 +52,10 @@
                         <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
                         <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/syslog/sys-log-grid')" class="cd">系统日志</a></td>
                     </tr>
+                    <tr>
+                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
+                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/demandtype/demand-type-grid')" class="cd">需求类型</a></td>
+                    </tr>
                 </table></td>
             </tr>
         </table></td>
@@ -75,10 +79,13 @@
                         <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
                         <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/item/item-main')" class="cd">日常领用管理</a></td>
                     </tr>
-                    <tr>
+<c:forEach items="${types}" var="type" varStatus="status">
+
+<tr>
                         <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">需求申请</a></td>
+                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/demand/demand!main?typeid=${type.id}')" class="cd">${type.name}</a></td>
                     </tr>
+    </c:forEach>
                 </table></td>
             </tr>
         </table></td>
