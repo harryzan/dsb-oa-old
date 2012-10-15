@@ -33,7 +33,7 @@
 -->
     </style>
 </head>
-<body class="userlogin_body">
+<body class="userlogin_body" onload="document.getElementById('loginname').focus()">
 		
 	<div class="centerDiv">
 		

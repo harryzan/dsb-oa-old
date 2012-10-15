@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="false">
+
+    <bean id="webappConfig" class="gov.dsb.web.config.WebappConfig" lazy-init="false">
+        <property name="documentPath" value="${webapp.documentPath}"/>
+        <property name="defaultPicturePath" value="/themes/default/oldimages/no_picture.gif"/>
+        <!--<property name="FTPScanRMIName" value=""/>-->
+    </bean>
+
+</beans>

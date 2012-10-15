@@ -18,7 +18,7 @@
     <tr>
         <td>
             <input onclick="openFunction('user-attendance!day')" type="button" name="button1" id="button1" value="个人考勤" class="tab_xz" />
-            <input type="button" name="button2" id="button2" value="考勤记录" class="tab" />
+            <input onclick="openFunction('user-attendance!record')" type="button" name="button2" id="button2" value="考勤记录" class="tab" />
         </td>
     </tr>
 </table>

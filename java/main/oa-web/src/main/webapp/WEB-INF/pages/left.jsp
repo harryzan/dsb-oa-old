@@ -21,181 +21,209 @@
     <tr>
         <td></td>
     </tr>
-    <tr>
-        <td><table width="231" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="Left_cd">系统管理</td>
-            </tr>
-            <tr>
-                <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysdept/sys-dept-main')" class="cd">单位部门管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysuser/sys-user-main')" class="cd">人事管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysrole/sys-role-main')" class="cd">角色管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysprivilege/sys-privilege-main')" class="cd">权限管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/syscode/sys-code-main')" class="cd">系统代码</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/syslog/sys-log-grid')" class="cd">系统日志</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/demandtype/demand-type-grid')" class="cd">需求类型</a></td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table></td>
-    </tr>
-    <tr>
-        <td><table width="231" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="Left_cd">行政办公管理</td>
-            </tr>
-            <tr>
-                <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/attendance/user-attendance-main')" class="cd">考勤管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/car/car-main')" class="cd">车辆管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/item/item-main')" class="cd">日常领用管理</a></td>
-                    </tr>
-<c:forEach items="${types}" var="type" varStatus="status">
 
-<tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/demand/demand!main?typeid=${type.id}')" class="cd">${type.name}</a></td>
-                    </tr>
-    </c:forEach>
-                </table></td>
-            </tr>
-        </table></td>
-    </tr>
-    <tr>
-        <td><table width="231" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="Left_cd">信息管理</td>
-            </tr>
-            <tr>
-                <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
+    <s:iterator value="loginmenus" status="sta">
+        <tr>
+            <td>
+                <table width="231" border="0" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="*" class="cd">全室一周工作安排</a></td>
+                        <td class="Left_cd">${mainmenu.name}</td>
                     </tr>
                     <tr>
-                        <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">通知公告管理</a></td>
+                        <td align="center">
+                            <table width="200" border="0" cellpadding="0" cellspacing="0">
+                                <s:iterator value="submenus">
+                                    <tr>
+                                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
+                                        <td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}${definition}')" class="cd">${name}</a></td>
+                                    </tr>
+                                </s:iterator>
+                            </table>
+                        </td>
                     </tr>
+                </table>
+            </td>
+        </tr>
+    </s:iterator>
 
-                </table></td>
-            </tr>
-        </table></td>
-    </tr>
-    <tr>
-        <td><table width="231" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="Left_cd">个人工作管理</td>
-            </tr>
-            <tr>
-                <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="*" class="cd">日历管理</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">个人文件夹</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">工作日志</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                        <td class="Left_cd1"><a href="*" class="cd">OA小精灵</a></td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-            <table width="231" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td class="Left_cd">文书管理</td>
-                </tr>
-                <tr>
-                    <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                            <td width="165" class="Left_cd1"><a href="*" class="cd">办文管理</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                            <td class="Left_cd1"><a href="*" class="cd">发文管理</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                            <td class="Left_cd1"><a href="*" class="cd">内部文书</a></td>
-                        </tr>
+    <%--<tr>--%>
+        <%--<td><table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+            <%--<tr>--%>
+                <%--<td class="Left_cd">系统管理</td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                    <%--<tr>--%>
+                        <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysdept/sys-dept-main')" class="cd">单位部门管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysuser/sys-user-main')" class="cd">人事管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysrole/sys-role-main')" class="cd">角色管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/sysprivilege/sys-privilege-main')" class="cd">权限管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/syscode/sys-code-main')" class="cd">系统代码</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/syslog/sys-log-grid')" class="cd">系统日志</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/system/demandtype/demand-type-grid')" class="cd">需求类型</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/document/doccategory/doc-category-main')" class="cd">文档目录</a></td>--%>
+                    <%--</tr>--%>
+                <%--</table></td>--%>
+            <%--</tr>--%>
+        <%--</table></td>--%>
+    <%--</tr>--%>
+    <%--<tr>--%>
+        <%--<td><table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+            <%--<tr>--%>
+                <%--<td class="Left_cd">行政办公管理</td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                    <%--<tr>--%>
+                        <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/attendance/user-attendance-main')" class="cd">考勤管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/car/car-main')" class="cd">车辆管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/item/item-main')" class="cd">日常领用管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<c:forEach items="${types}" var="type" varStatus="status">--%>
+                        <%--<tr>--%>
+                            <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                            <%--<td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/oa/demand/demand!main?typeid=${type.id}')" class="cd">${type.name}</a></td>--%>
+                        <%--</tr>--%>
+                    <%--</c:forEach>--%>
+                <%--</table></td>--%>
+            <%--</tr>--%>
+        <%--</table></td>--%>
+    <%--</tr>--%>
+    <%--<tr>--%>
+        <%--<td><table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+            <%--<tr>--%>
+                <%--<td class="Left_cd">信息管理</td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                    <%--<tr>--%>
+                        <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/message/workarrange/work-arrange-main')" class="cd">全室一周工作安排</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/message/bulletin/bulletin-main')" class="cd">通知公告管理</a></td>--%>
+                    <%--</tr>--%>
 
-                    </table></td>
-                </tr>
-            </table>
-            <table width="231" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td class="Left_cd">规章制度</td>
-                </tr>
-                <tr>
-                    <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                            <td width="165" class="Left_cd1"><a href="*" class="cd">规章制度</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                            <td class="Left_cd1"><a href="*" class="cd">内部通讯录</a></td>
-                        </tr>
-                        <tr>
-                            <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
-                            <td class="Left_cd1"><a href="*" class="cd">表格下载</a></td>
-                        </tr>
-                    </table></td>
-                </tr>
-            </table></td>
-    </tr>
-    <tr>
-        <td><table width="231" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="Left_cd">视频点播</td>
-            </tr>
-            <tr>
-                <td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
-                        <td width="165" class="Left_cd1"><a href="*" class="cd">视频点播</a></td>
-                    </tr>
+                <%--</table></td>--%>
+            <%--</tr>--%>
+        <%--</table></td>--%>
+    <%--</tr>--%>
+    <%--<tr>--%>
+        <%--<td><table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+            <%--<tr>--%>
+                <%--<td class="Left_cd">个人工作管理</td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                    <%--<tr>--%>
+                        <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="*" class="cd">日历管理</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/document/docdocument/doc-document-main')" class="cd">个人文件夹</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}/work/worklog/worklog-main')" class="cd">工作日志</a></td>--%>
+                    <%--</tr>--%>
+                    <%--<tr>--%>
+                        <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                        <%--<td class="Left_cd1"><a href="*" class="cd">OA小精灵</a></td>--%>
+                    <%--</tr>--%>
+                <%--</table></td>--%>
+            <%--</tr>--%>
+        <%--</table>--%>
+            <%--<table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+                <%--<tr>--%>
+                    <%--<td class="Left_cd">文书管理</td>--%>
+                <%--</tr>--%>
+                <%--<tr>--%>
+                    <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                        <%--<tr>--%>
+                            <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                            <%--<td width="165" class="Left_cd1"><a href="*" class="cd">办文管理</a></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                            <%--<td class="Left_cd1"><a href="*" class="cd">发文管理</a></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                            <%--<td class="Left_cd1"><a href="*" class="cd">内部文书</a></td>--%>
+                        <%--</tr>--%>
 
-                </table></td>
-            </tr>
-        </table></td>
-    </tr>
+                    <%--</table></td>--%>
+                <%--</tr>--%>
+            <%--</table>--%>
+            <%--<table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+                <%--<tr>--%>
+                    <%--<td class="Left_cd">规章制度</td>--%>
+                <%--</tr>--%>
+                <%--<tr>--%>
+                    <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                        <%--<tr>--%>
+                            <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                            <%--<td width="165" class="Left_cd1"><a href="*" class="cd">规章制度</a></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                            <%--<td class="Left_cd1"><a href="*" class="cd">内部通讯录</a></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>--%>
+                            <%--<td class="Left_cd1"><a href="*" class="cd">表格下载</a></td>--%>
+                        <%--</tr>--%>
+                    <%--</table></td>--%>
+                <%--</tr>--%>
+            <%--</table></td>--%>
+    <%--</tr>--%>
+    <%--<tr>--%>
+        <%--<td><table width="231" border="0" cellpadding="0" cellspacing="0">--%>
+            <%--<tr>--%>
+                <%--<td class="Left_cd">视频点播</td>--%>
+            <%--</tr>--%>
+            <%--<tr>--%>
+                <%--<td align="center"><table width="200" border="0" cellpadding="0" cellspacing="0">--%>
+                    <%--<tr>--%>
+                        <%--<td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>--%>
+                        <%--<td width="165" class="Left_cd1"><a href="*" class="cd">视频点播</a></td>--%>
+                    <%--</tr>--%>
+
+                <%--</table></td>--%>
+            <%--</tr>--%>
+        <%--</table></td>--%>
+    <%--</tr>--%>
 </table>
 </body>
 </html>

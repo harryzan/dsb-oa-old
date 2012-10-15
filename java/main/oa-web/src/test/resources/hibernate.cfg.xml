@@ -2,6 +2,7 @@
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
+        <mapping class="gov.dsb.core.domain.Bulletin"/>
         <mapping class="gov.dsb.core.domain.Car"/>
         <mapping class="gov.dsb.core.domain.CarMaintainance"/>
         <mapping class="gov.dsb.core.domain.CarUse"/>
@@ -24,6 +25,8 @@
         <mapping class="gov.dsb.core.domain.SysUser"/>
         <mapping class="gov.dsb.core.domain.SysUserPrivilege"/>
         <mapping class="gov.dsb.core.domain.UserAttendance"/>
+        <mapping class="gov.dsb.core.domain.WorkLog"/>
+        <mapping class="gov.dsb.core.domain.WorkArrange"/>
 
     </session-factory>
 </hibernate-configuration>

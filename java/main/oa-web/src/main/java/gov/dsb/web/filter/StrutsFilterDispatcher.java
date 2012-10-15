@@ -54,7 +54,7 @@ public class StrutsFilterDispatcher extends org.apache.struts2.dispatcher.Filter
                             SESSION_USERSESSION);
             if (userSession == null) {
                 StringBuffer url = request.getRequestURL();
-                if ("/".equals(url.substring(url.length() - 1)) || url.indexOf("/logon") >= 0 ||
+                if ("/".equals(url.substring(url.length() - 1)) || url.indexOf("/login") >= 0 ||
                         url.indexOf("/index") >= 0 || url.indexOf("themes") >= 0 ||
                         url.indexOf("scripts") >= 0 || url.indexOf("common") >= 0) {
                     return false;

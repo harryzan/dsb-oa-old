@@ -87,23 +87,23 @@
 <tr>
       <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="4" height="4" background="${themesPath}/images/bg/shang.gif"><div align="right"><img src="${themesPath}/images/bg/1.gif" width="4" height="4"></div></td>
-          <td height="4" background="${themesPath}/images/bg/shang.gif"></td>
-          <td width="4" height="4" align="right"><img src="${themesPath}/images/bg/2.gif" width="4" height="4"></td>
+          <td width="4" height="4" background="${themesPath}/oldimages/bg/shang.gif"><div align="right"><img src="${themesPath}/oldimages/bg/1.gif" width="4" height="4"></div></td>
+          <td height="4" background="${themesPath}/oldimages/bg/shang.gif"></td>
+          <td width="4" height="4" align="right"><img src="${themesPath}/oldimages/bg/2.gif" width="4" height="4"></td>
         </tr>
         <tr>
-          <td width="4" background="${themesPath}/images/bg/zuo.gif"><img src="${themesPath}/images/bg/zuo.gif" width="4" height="4"></td>
+          <td width="4" background="${themesPath}/oldimages/bg/zuo.gif"><img src="${themesPath}/oldimages/bg/zuo.gif" width="4" height="4"></td>
           <td width="100%">
             <!-- start insert your custom code -->
          <div id="list" align="left"></div>
             <!-- end insert your custom code -->
         </td>
-          <td width="4" background="${themesPath}/images/bg/you.gif"><img src="${themesPath}/images/bg/you.gif" width="4" height="4"></td>
+          <td width="4" background="${themesPath}/oldimages/bg/you.gif"><img src="${themesPath}/oldimages/bg/you.gif" width="4" height="4"></td>
         </tr>
         <tr>
-          <td width="4" height="4" background="${themesPath}/images/bg/xia.gif"><div align="right"><img src="${themesPath}/images/bg/3.gif" width="4" height="4"></div></td>
-          <td height="4" background="${themesPath}/images/bg/xia.gif"></td>
-          <td width="4" align="right"><img src="${themesPath}/images/bg/4.gif" width="4" height="4"></td>
+          <td width="4" height="4" background="${themesPath}/oldimages/bg/xia.gif"><div align="right"><img src="${themesPath}/oldimages/bg/3.gif" width="4" height="4"></div></td>
+          <td height="4" background="${themesPath}/oldimages/bg/xia.gif"></td>
+          <td width="4" align="right"><img src="${themesPath}/oldimages/bg/4.gif" width="4" height="4"></td>
         </tr>
       </table>
     </td>

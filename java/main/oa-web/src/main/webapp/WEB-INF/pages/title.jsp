@@ -12,7 +12,7 @@
 <body>
 <div class="Header">
   <div class="logo">
-  	<div class="title"><img src="${themesPath}/images/title_1.jpg" width="568" height="76" /></div>
+  	<div class="title"><img onclick="window.parent.location.reload();" style="cursor: pointer" src="${themesPath}/images/title_1.jpg" width="568" height="76" /></div>
     <div class="right"></div>
   </div>
   	

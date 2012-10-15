@@ -135,8 +135,6 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
     private String endtime;
 
     public String save() throws Exception {
-        System.out.println("********* attid = " + attid);
-        System.out.println("********* atttype = " + atttype);
 
         String[] ids = attid.split(",");
         String[] types = atttype.split(",");
@@ -195,6 +193,11 @@ public class UserAttendanceAction extends CRUDActionSupport<UserAttendance> {
         }
 
         return "day";
+    }
+
+    public String record() throws Exception {
+        day();
+        return "record";
     }
 
     public String month() throws Exception {

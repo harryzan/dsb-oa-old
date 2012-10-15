@@ -3,12 +3,11 @@ package gov.dsb.core.domain;
 import gov.dsb.core.domain.base.IdEntity;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 /**
  * Created with IntelliJ IDEA.
  * User: harryzan
- * Date: 9/16/12
+ * String: 9/16/12
  * Time: 4:24 PM
  * To change this template use File | Settings | File Templates.
  */
@@ -37,33 +36,33 @@ public class Demand extends IdEntity {
         this.name = name;
     }
 
-    private Date demanddate;
+    private String demanddate;
 
-    public Date getDemanddate() {
+    public String getDemanddate() {
         return demanddate;
     }
 
-    public void setDemanddate(Date demanddate) {
+    public void setDemanddate(String demanddate) {
         this.demanddate = demanddate;
     }
 
-    private Date submitdate;
+    private String submitdate;
 
-    public Date getSubmitdate() {
+    public String getSubmitdate() {
         return submitdate;
     }
 
-    public void setSubmitdate(Date submitdate) {
+    public void setSubmitdate(String submitdate) {
         this.submitdate = submitdate;
     }
 
-    private Date checkdate;
+    private String checkdate;
 
-    public Date getCheckdate() {
+    public String getCheckdate() {
         return checkdate;
     }
 
-    public void setCheckdate(Date checkdate) {
+    public void setCheckdate(String checkdate) {
         this.checkdate = checkdate;
     }
 

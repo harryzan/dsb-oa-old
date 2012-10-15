@@ -85,14 +85,11 @@
                 <jdbc.artifactId>ojdbc6</jdbc.artifactId>
                 <jdbc.version>11.1.0.7.0</jdbc.version>
                 <jdbc.driverClassName>oracle.jdbc.OracleDriver</jdbc.driverClassName>
-                <jdbc.url><![CDATA[jdbc:oracle:thin:@192.168.171.164:1521:orcl]]></jdbc.url>
-                <jdbc.username>shcjsq-health</jdbc.username>
-                <jdbc.password>health</jdbc.password>
+                <jdbc.url><![CDATA[jdbc:oracle:thin:@localhost:1521:orcl]]></jdbc.url>
+                <jdbc.username>oa</jdbc.username>
+                <jdbc.password>oa</jdbc.password>
 
-                <webapp.documentPath>E:\documents</webapp.documentPath>
-                <webapp.chartx.hostIp>192.168.171.179</webapp.chartx.hostIp>
-                <webapp.chartx.port>80</webapp.chartx.port>
-                <webapp.chartx.url>/web/common/dpc/call</webapp.chartx.url>
+                <webapp.documentPath>D:\documents</webapp.documentPath>
             </properties>
         </profile>
 
@@ -109,10 +106,7 @@
                 <jdbc.username>oa</jdbc.username>
                 <jdbc.password>oa</jdbc.password>
 
-                <webapp.documentPath>E:\documents</webapp.documentPath>
-                <webapp.chartx.hostIp>192.168.171.179</webapp.chartx.hostIp>
-                <webapp.chartx.port>80</webapp.chartx.port>
-                <webapp.chartx.url>/web/common/dpc/call</webapp.chartx.url>
+                <webapp.documentPath>/Volumes/data/workspaces/documents</webapp.documentPath>
             </properties>
         </profile>
     </profiles>

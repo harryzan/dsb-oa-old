@@ -39,36 +39,36 @@ public final class Const {
     /**
      * 采样周期单位为毫秒
      */
-    public static final String DTUNIT_MILLISECOND = "MS";
+    public static final String DTUNIT_MILLISECOND = "毫秒";
     /**
      * 采样周期单位为秒
      */
-    public static final String DTUNIT_SECOND = "S";
+    public static final String DTUNIT_SECOND = "秒";
     /**
      * 采样周期单位为分钟
      */
-    public static final String DTUNIT_MINUTE = "M";
+    public static final String DTUNIT_MINUTE = "分";
     /**
      * 采样周期单位为小时
      */
-    public static final String DTUNIT_HOUR = "H";
+    public static final String DTUNIT_HOUR = "时";
     /**
      * 采样周期单位为天
      */
-    public static final String DTUNIT_DAY = "D";
+    public static final String DTUNIT_DAY = "天";
     // add by zyl on 2007.9.3
     /**
      * 采样周期单位为星期
      */
-    public static final String DTUNIT_WEEK = "W";
+    public static final String DTUNIT_WEEK = "周";
     /**
      * 采样周期单位为月
      */
-    public static final String DTUNIT_MONTH = "MM";
+    public static final String DTUNIT_MONTH = "月";
     /**
      * 采样周期单位为年
      */
-    public static final String DTUNIT_YEAR = "Y";
+    public static final String DTUNIT_YEAR = "年";
 
     /**
      * 临时文件名称

@@ -5,6 +5,7 @@ import gov.dsb.core.common.Const;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by IntelliJ IDEA.
@@ -331,10 +332,13 @@ public final class TimeHelper {
      * @param args  String[]
      */
     public static void main(String[] args) throws Exception {
-        String dtString = "1D";
-        String time = "2012-01-01 00:00:00";
-        long l = truncTimeWithTimezone(Timestamp.valueOf(time).getTime(), dtString2DtLong(dtString));
-        System.out.println("l = " + new Timestamp(l));
+//        String dtString = "1D";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String time = "2012-12-28";
+//        Timestamp timestamp = Timestamp.valueOf(time);
+//        System.out.println("parse = " + timestamp);
+//        long l = truncTimeWithTimezone(Timestamp.valueOf(time).getTime(), dtString2DtLong(dtString));
+//        System.out.println("l = " + new Timestamp(l));
 //        Calendar calendar = Calendar.getInstance();
 //        System.out.println("timestamp.toString() = " + timestamp.toString());
 //        truncTime(calendar, dtString);
@@ -349,6 +353,22 @@ public final class TimeHelper {
 //        String s = null;
 //        long l = parseTime(s);
 //        System.out.println("l = " + l);
+        Date d = sdf.parse(time);
+        System.out.println("d = " + d);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+
+        int weekofyear = calendar.get(Calendar.WEEK_OF_YEAR);
+        System.out.println("weekofyear = " + weekofyear);
+        int weekofmonth = calendar.get(Calendar.WEEK_OF_MONTH);
+        System.out.println("weekofmonth = " + weekofmonth);
+        int month = calendar.get(Calendar.MONTH)+1;
+        System.out.println("month = " + month);
+        int firstDayOfWeek = calendar.getFirstDayOfWeek();
+        System.out.println("firstDayOfWeek = " + firstDayOfWeek);
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+        System.out.println("day = " + day);
     }
 
 }
