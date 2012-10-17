@@ -33,10 +33,20 @@
                         <td align="center">
                             <table width="200" border="0" cellpadding="0" cellspacing="0">
                                 <s:iterator value="submenus">
+                                    <c:if test='${code != "demand"}'>
                                     <tr>
                                         <td width="19"><img src="${themesPath}/images/left_3.png" width="5" height="9" /></td>
                                         <td width="165" class="Left_cd1"><a href="#" onclick="openFunction('${ctx}${definition}')" class="cd">${name}</a></td>
                                     </tr>
+                                    </c:if>
+                                    <c:if test='${code == "demand"}'>
+                                        <c:forEach items="${types}" var="type" varStatus="status">
+                                        <tr>
+                                        <td><img src="${themesPath}/images/left_3.png" alt="" width="5" height="9" /></td>
+                                        <td class="Left_cd1"><a href="#" onclick="openFunction('${ctx}${definition}?typeid=${type.id}')" class="cd">${type.name}</a></td>
+                                        </tr>
+                                         </c:forEach>
+                                    </c:if>
                                 </s:iterator>
                             </table>
                         </td>
