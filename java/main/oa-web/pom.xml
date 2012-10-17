@@ -153,9 +153,9 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>org.apache.struts</groupId>-->
-            <!--<artifactId>struts2-core</artifactId>-->
-            <!--<version>2.3.1.2</version>-->
+        <!--<groupId>org.apache.struts</groupId>-->
+        <!--<artifactId>struts2-core</artifactId>-->
+        <!--<version>2.3.1.2</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.apache.struts</groupId>

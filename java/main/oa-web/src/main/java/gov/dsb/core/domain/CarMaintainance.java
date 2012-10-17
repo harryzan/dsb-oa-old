@@ -39,6 +39,7 @@ public class CarMaintainance extends IdEntity {
 
     private String desc;
 
+    @Column(name = "DESCRIPTION", length = 4000)
     public String getDesc() {
         return desc;
     }
