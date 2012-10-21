@@ -119,9 +119,9 @@ public class BulletinGridAction extends PageActionSupport<Bulletin> {
 
         String hql = "from Bulletin";
         if (bulletinstatus)
-            hql += " where endtime < sysdate";
+            hql += " where endtime < to_char(sysdate)";
         else
-            hql += " where endtime >= sysdate";
+            hql += " where endtime >= to_char(sysdate)";
         if (!StringHelp.isEmpty(conditions)) {
             QueryTranslate queryTranslate = new QueryTranslate(hql, conditions);
             page = service.findPageByQuery(page, queryTranslate.toString() + " order by starttime desc");

@@ -266,7 +266,7 @@
                             <configuration>
                                 <type>runtime</type>
                                 <properties>
-                                    <cargo.tomcat.manager.url>http://localhost:8080/manager</cargo.tomcat.manager.url>
+                                    <cargo.tomcat.manager.url>http://localhost/manager</cargo.tomcat.manager.url>
                                     <cargo.remote.username>admin</cargo.remote.username>
                                     <cargo.remote.password>admin</cargo.remote.password>
                                 </properties>

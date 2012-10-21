@@ -33,7 +33,7 @@ public class Bulletin extends IdEntity {
     private String starttime;
 
     @Basic
-    @Column(name = "STARTTIME", length = 7)
+    @Column(name = "STARTTIME", length = 10)
     public String getStarttime() {
         return starttime;
     }
@@ -57,7 +57,7 @@ public class Bulletin extends IdEntity {
     private String description;
 
     @Basic
-    @Column(name = "DESCRIPTION", length = 5000)
+    @Column(name = "DESCRIPTION", length = 4000)
     public String getDescription() {
         return description;
     }
@@ -93,7 +93,7 @@ public class Bulletin extends IdEntity {
     private String endtime;
 
     @Basic
-    @Column(name = "ENDTIME", length = 7)
+    @Column(name = "ENDTIME", length = 10)
     public String getEndtime() {
         return endtime;
     }

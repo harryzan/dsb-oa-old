@@ -79,7 +79,7 @@
         <profile>
             <id>app-env</id>
             <properties>
-                <hibernate.dialect>com.justone.core.hibernate.dialect.Oracle10gDialect</hibernate.dialect>
+                <hibernate.dialect>gov.dsb.core.hibernate.dialect.Oracle10gDialect</hibernate.dialect>
                 <hibernate.cache_class>org.hibernate.cache.EhCacheProvider</hibernate.cache_class>
                 <jdbc.groupId>com.oracle</jdbc.groupId>
                 <jdbc.artifactId>ojdbc6</jdbc.artifactId>
